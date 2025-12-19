@@ -15,11 +15,11 @@
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 
--- Dumping database structure for react_portfolio
+-- Dumping database structure for artista_portfolio
 CREATE DATABASE IF NOT EXISTS `artista_portfolio` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci */ /*!80016 DEFAULT ENCRYPTION='N' */;
 USE `artista_portfolio`;
 
--- Dumping structure for table react_portfolio.projects
+-- Dumping structure for table artista_portfolio.projects
 CREATE TABLE IF NOT EXISTS `projects` (
   `id` int NOT NULL AUTO_INCREMENT,
   `title` varchar(255) NOT NULL,
@@ -30,11 +30,11 @@ CREATE TABLE IF NOT EXISTS `projects` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
--- Dumping data for table react_portfolio.projects: ~3 rows (approximately)
+-- Dumping data for table artista_portfolio.projects: ~3 rows (approximately)
 INSERT INTO `projects` (`id`, `title`, `description`, `url`, `tech_stack`, `created_at`) VALUES
-	(1, 'Taskify', 'A task lister', 'https://Taskify.com', 'HTML, CSS, JAVASCRIPT', '2025-12-07 08:59:11'),
-	(2, 'Task Manager API', 'A simple REST API to manage tasks, built with Node and Express.', 'https://github.com/username/task-api', 'Node.js, Express, MySQL', '2025-12-07 08:59:11'),
-	(3, 'Landing Page Demo', 'A marketing landing page designed with modern UI components.', 'https://landing-page-demo.com', 'HTML, CSS, JavaScript', '2025-12-07 08:59:11');
+	(1, 'Simple Portfolio', 'A simple portfolio where my personal information is posted.', 'https://kaartist.github.io/Simple-Portfolio/', 'HTML, CSS', '2025-12-07 08:59:11'),
+	(2, 'Interactive Web Programming Activities', 'A collection of interactive web activities demonstrating event-driven programming, DOM manipulation, and canvas integration using JavaScript.', 'https://kaartist.github.io/Interactive-Web-Programming-Activities/', 'HTML, CSS, JavaScript', '2025-12-07 08:59:11'),
+	(3, 'Taskify', 'A simple task manager project that lets users add and delete tasks.', 'https://kaartist.github.io/Taskify---A-Simple-Task-Manager/', 'HTML, CSS, JavaScript', '2025-12-07 08:59:11');
 
 /*!40103 SET TIME_ZONE=IFNULL(@OLD_TIME_ZONE, 'system') */;
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
