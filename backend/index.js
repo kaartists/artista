@@ -15,8 +15,7 @@ const pool = mysql.createPool({
   host: process.env.DB_HOST,
   user: process.env.DB_USER,
   password: process.env.DB_PASSWORD,
-  database: process.env.DB_NAME,
-  port: process.env.DB_PORT
+  database: process.env.DB_NAME
 });
 
 // Simple health check route
@@ -35,9 +34,8 @@ app.get('/api/projects', async (req, res) => {
   }
 });
 
-const PORT = process.env.PORT || 10000;
+const PORT = process.env.PORT || 5000;
 
 app.listen(PORT, () => {
   console.log(`Server is listening on http://localhost:${PORT}`);
 });
-
